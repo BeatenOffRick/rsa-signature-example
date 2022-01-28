@@ -1,0 +1,18 @@
+plugins {
+    id 'java'
+}
+
+group 'org.example'
+version '1.0-SNAPSHOT'
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    compile group: 'org.bouncycastle', name: 'bcpkix-jdk15on', version: '1.70'
+}
+
+test {
+    useJUnitPlatform()
+}
